@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Link all the key config files to MyHyprland's internal versions for quicker testing
-ln -nsf ~/.local/share/MyHyprland/config/hypr/hyprland.conf ~/.config/hypr/
-ln -nsf ~/.local/share/MyHyprland/config/hypr/hypridle.conf ~/.config/hypr/
-ln -nsf ~/.local/share/MyHyprland/config/waybar/config ~/.config/waybar/
-ln -nsf ~/.local/share/MyHyprland/config/wofi/config ~/.config/wofi/
+# Link all the key config files to myhyprland's internal versions for quicker testing
+ln -nsf ~/.local/share/myhyprland/config/hypr/hyprland.conf ~/.config/hypr/
+ln -nsf ~/.local/share/myhyprland/config/hypr/hypridle.conf ~/.config/hypr/
+ln -nsf ~/.local/share/myhyprland/config/waybar/config ~/.config/waybar/
+ln -nsf ~/.local/share/myhyprland/config/wofi/config ~/.config/wofi/

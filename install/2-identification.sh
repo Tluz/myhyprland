@@ -5,6 +5,6 @@ if [! $installationType == 3]; then
 
     # Configure identification
     echo -e "\nEnter identification for git and autocomplete..."
-    export MyHyprland_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
-    export MyHyprland_USER_EMAIL=$(gum input --placeholder "Enter email address" --prompt "Email> ")
+    export myhyprland_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
+    export myhyprland_USER_EMAIL=$(gum input --placeholder "Enter email address" --prompt "Email> ")
 fi

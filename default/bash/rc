@@ -1,6 +1,6 @@
-source ~/.local/share/MyHyprland/default/bash/shell
-source ~/.local/share/MyHyprland/default/bash/aliases
-source ~/.local/share/MyHyprland/default/bash/functions
-source ~/.local/share/MyHyprland/default/bash/prompt
-source ~/.local/share/MyHyprland/default/bash/init
-source ~/.local/share/MyHyprland/default/bash/envs
+source ~/.local/share/myhyprland/default/bash/shell
+source ~/.local/share/myhyprland/default/bash/aliases
+source ~/.local/share/myhyprland/default/bash/functions
+source ~/.local/share/myhyprland/default/bash/prompt
+source ~/.local/share/myhyprland/default/bash/init
+source ~/.local/share/myhyprland/default/bash/envs
