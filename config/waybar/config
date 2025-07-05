@@ -20,7 +20,7 @@
     ],
     "hyprland/workspaces": {
       "on-click": "activate",
-      "format": "{value}",
+      "format": "{icon}",
       "format-icons": {
         "default": "",
         "1": "1",
