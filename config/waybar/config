@@ -10,17 +10,17 @@
       "clock"
     ],
     "modules-right": [
-      "custom/dropbox",
+      "cpu",
+      "memory",
       "bluetooth",
       "network",
-      "pulseaudio",
-      "cpu",
       "power-profiles-daemon",
+      "pulseaudio",
       "battery"
     ],
     "hyprland/workspaces": {
       "on-click": "activate",
-      "format": "{icon}",
+      "format": "{value}",
       "format-icons": {
         "default": "",
         "1": "1",
@@ -44,7 +44,7 @@
     },
     "cpu": {
       "interval": 5,
-      "format": "󰍛",
+      "format": "󰍛 {}%",
       "on-click": "alacritty -e btop"
     },
     "clock": {
@@ -67,8 +67,8 @@
     },
     "battery": {
       "format": "{capacity}% {icon}",
-      "format-discharging": "{icon}",
-      "format-charging":    "{icon}",
+      "format-discharging": "{icon} {capacity}% ",
+      "format-charging":    "{icon} {capacity}% ",
       "format-plugged":     "",
         "format-icons": {
           "charging": [
@@ -81,7 +81,7 @@
       "format-full": "Charged ",
       "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
       "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
-      "interval": 5,
+      "interval": 60,
       "states": {
         "warning": 20,
         "critical": 10
@@ -113,13 +113,9 @@
         "performance":  "󰡴"
       }
     },
-    "custom/dropbox": {
-      "format": "",
-      "on-click": "nautilus ~/Dropbox",
-      "exec": "dropbox-cli status",
-      "return-type": "text",
-      "interval": 5,
-      "tooltip": true,
-      "tooltip-format": "{}"
+    "memory": {
+	    "interval": 30,
+	    "format": "   {}% ",
+	    "max-length": 10
     }
 }
