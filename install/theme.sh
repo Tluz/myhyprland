@@ -1,11 +1,11 @@
-$installationType = $1
+installationType = $1
 
 if [! $installationType == 3]; then
-    # Use dark mode for QT apps too (like VLC and kdenlive)
-    sudo pacman -S --noconfirm kvantum-qt5
+  # Use dark mode for QT apps too (like VLC and kdenlive)
+  sudo pacman -S --noconfirm kvantum-qt5
 
-    # Prefer dark mode everything
-    sudo pacman -S --noconfirm gnome-themes-extra # Adds Adwaita-dark theme
+  # Prefer dark mode everything
+  sudo pacman -S --noconfirm gnome-themes-extra # Adds Adwaita-dark theme
 fi
 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"

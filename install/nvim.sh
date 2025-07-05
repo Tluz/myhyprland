@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 
 if [! $installationType == 3]; then
   if ! command -v nvim &>/dev/null; then
@@ -12,3 +12,4 @@ if [! $installationType == 3]; then
     echo "vim.opt.relativenumber = false" >>~/.config/nvim/lua/config/options.lua
   fi
 fi
+

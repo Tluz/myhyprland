@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 if [! $installationType == 3]; then
   yay -S --noconfirm --needed \
     hyprland hyprshot hyprpicker hyprlock hypridle hyprpolkitagent hyprland-qtutils \
@@ -8,3 +8,4 @@ if [! $installationType == 3]; then
   # Start Hyprland on first session
   echo "[[ -z \$DISPLAY && \$(tty) == /dev/tty1 ]] && exec Hyprland" >~/.bash_profile
 fi
+

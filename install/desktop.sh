@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 if [! $installationType == 3]; then
   yay -S --noconfirm --needed \
     brightnessctl playerctl pamixer pavucontrol wireplumber \
@@ -7,3 +7,4 @@ if [! $installationType == 3]; then
     chromium vlc \
     evince imv
 fi
+

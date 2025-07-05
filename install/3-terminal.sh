@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 if [! $installationType == 3]; then
   yay -S --noconfirm --needed \
     wget curl unzip inetutils \
@@ -7,4 +7,3 @@ if [! $installationType == 3]; then
     man tldr less whois plocate \
     alacritty
 fi
-

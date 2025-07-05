@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 if [! $installationType == 3]; then
   # Setting the performance profile can make a big difference. By default, most systems seem to start in balanced mode,
   # even if they're not running off a battery. So let's make sure that's changed to performance.
@@ -12,3 +12,4 @@ if [! $installationType == 3]; then
     powerprofilesctl set performance
   fi
 fi
+

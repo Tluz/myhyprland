@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 if [! $installationType == 3]; then
   yay -Sy --noconfirm --needed ttf-font-awesome noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
 

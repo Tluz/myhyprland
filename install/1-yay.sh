@@ -1,5 +1,5 @@
-$installationType = $1
-if $installationType == 3 then
+installationType = $1
+if [ $installationType == 3 ]; then
   sudo pacman -S --needed --noconfirm base-devel
   if ! command -v yay &>/dev/null; then
     git clone https://aur.archlinux.org/yay-bin.git
@@ -9,3 +9,4 @@ if $installationType == 3 then
     rm -rf yay-bin
   fi
 fi
+

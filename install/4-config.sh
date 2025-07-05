@@ -1,4 +1,4 @@
-$installationType = $1
+installationType = $1
 # Copy over myhyprland configs
 cp -R ~/.local/share/myhyprland/config/* ~/.config/
 
@@ -23,3 +23,4 @@ if [! $installationType == 3]; then
     git config --global user.email "$myhyprland_USER_EMAIL"
   fi
 fi
+

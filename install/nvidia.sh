@@ -7,7 +7,7 @@
 # Author: https://github.com/Kn0ax
 #
 # ==============================================================================
-$installationType = $1
+installationType = $1
 
 if [! $installationType == 3]; then
   # --- GPU Detection ---
