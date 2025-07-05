@@ -1,14 +1,10 @@
-installationType = $1
-if [! $installationType == 3]; then
-  yay -S --noconfirm --needed docker docker-compose
+yay -S --noconfirm --needed docker docker-compose
 
-  # Limit log size to avoid running out of disk
-  echo '{"log-driver":"json-file","log-opts":{"max-size":"10m","max-file":"5"}}' | sudo tee /etc/docker/daemon.json
+# Limit log size to avoid running out of disk
+echo '{"log-driver":"json-file","log-opts":{"max-size":"10m","max-file":"5"}}' | sudo tee /etc/docker/daemon.json
 
-  # Start Docker automatically
-  sudo systemctl enable docker
+# Start Docker automatically
+sudo systemctl enable docker
 
-  # Give this user privileged Docker access
-  sudo usermod -aG docker ${USER}
-fi
-
+# Give this user privileged Docker access
+sudo usermod -aG docker ${USER}

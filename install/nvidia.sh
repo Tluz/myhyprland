@@ -7,9 +7,7 @@
 # Author: https://github.com/Kn0ax
 #
 # ==============================================================================
-installationType = $1
 
-if [! $installationType == 3]; then
   # --- GPU Detection ---
   if [ -n "$(lspci | grep -i 'nvidia')" ]; then
     # --- Driver Selection ---
@@ -82,4 +80,3 @@ if [! $installationType == 3]; then
       EOF
     fi
   fi
-fi
