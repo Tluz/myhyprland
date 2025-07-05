@@ -29,7 +29,6 @@ NEW_THEME=${THEMES[$NEXT_INDEX]}
 NEW_THEME_NAME=$(basename "$NEW_THEME")
 
 # Set current theme
-ln -nsf "$HOME/.config/myhyprland/backgrounds/$NEW_THEME_NAME" "$HOME/.config/myhyprland/current/backgrounds"
 ln -nsf "$NEW_THEME" "$HOME/.config/myhyprland/current/theme"
 
 # Touch alacritty config to pickup the changed theme
@@ -41,7 +40,7 @@ makoctl reload
 hyprctl reload
 
 # Set new background
-ln -nsf $(find "$HOME/.config/myhyprland/current/backgrounds/" -type f | head -n 1) "$HOME/.config/myhyprland/current/background"
+ln -nsf $(find "$HOME/.config/myhyprland/current/theme/backgrounds/" -type f | head -n 1) "$HOME/.config/myhyprland/current/background"
 pkill -x swaybg
 setsid swaybg -i "$HOME/.config/myhyprland/current/background" -m fill &
 

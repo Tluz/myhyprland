@@ -14,9 +14,6 @@ for f in ~/.local/share/myhyprland/themes/*; do ln -s "$f" ~/.config/myhyprland/
 # Set initial theme
 mkdir -p ~/.config/myhyprland/current
 ln -snf ~/.config/myhyprland/themes/tokyo-night ~/.config/myhyprland/current/theme
-source ~/.local/share/myhyprland/themes/tokyo-night/backgrounds.sh
-ln -snf ~/.config/myhyprland/backgrounds/tokyo-night ~/.config/myhyprland/current/backgrounds
-ln -snf ~/.config/myhyprland/current/backgrounds/background.png ~/.config/myhyprland/current/background
 
 # Set specific app links for current theme
 ln -snf ~/.config/myhyprland/current/theme/hyprlock.conf ~/.config/hypr/hyprlock.conf
