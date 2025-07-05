@@ -4,6 +4,9 @@ cp -R ~/.local/share/myhyprland/config/* ~/.config/
 # Use default bashrc from myhyprland
 echo "source ~/.local/share/myhyprland/default/bash/rc" >~/.bashrc
 
+# Ensure application directory exists for update-desktop-database
+mkdir -p ~/.local/share/applications
+
 # Set common git aliases
 git config --global alias.co checkout
 git config --global alias.br branch
