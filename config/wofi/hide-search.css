@@ -1,0 +1,4 @@
+@import '.config/wofi/style.css';
+#input{
+        margin: -1000px; 
+}
