@@ -121,7 +121,7 @@
     },
     "custom/power-menu": {
       "format": "󰐥",
-      "on-click": "~/.local/share/myhyprland/bin/power-menu.sh",
+      "on-click": "~/.local/share/myhyprland/bin/power-menu",
       "tooltip": false
     }
 }
