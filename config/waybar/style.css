@@ -16,13 +16,14 @@
   margin-right: 3px;
 }
 
-#custom-dropbox,
 #cpu,
+#memory,
 #power-profiles-daemon,
 #battery,
 #network,
 #bluetooth,
 #pulseaudio,
+#custom-power-menu,
 #clock {
   min-width: 12px;
   margin-right: 13px;

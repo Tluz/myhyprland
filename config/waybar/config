@@ -16,7 +16,8 @@
       "network",
       "power-profiles-daemon",
       "pulseaudio",
-      "battery"
+      "battery",
+      "custom/power-menu"
     ],
     "hyprland/workspaces": {
       "on-click": "activate",
@@ -67,8 +68,8 @@
     },
     "battery": {
       "format": "{capacity}% {icon}",
-      "format-discharging": "{icon} {capacity}% ",
-      "format-charging":    "{icon} {capacity}% ",
+      "format-discharging": "{icon} {capacity}%",
+      "format-charging":    "{icon} {capacity}%",
       "format-plugged":     "",
         "format-icons": {
           "charging": [
@@ -115,7 +116,12 @@
     },
     "memory": {
 	    "interval": 30,
-	    "format": "  {}% ",
+	    "format": "  {}%",
 	    "max-length": 10
+    },
+    "custom/power-menu": {
+      "format": "󰐥",
+      "on-click": "~/.local/share/myhyprland/bin/power-menu.sh",
+      "tooltip": false
     }
 }
