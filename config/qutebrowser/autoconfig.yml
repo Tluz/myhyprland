@@ -10,7 +10,17 @@ settings:
     global:
       normal:
         ',m': spawn mpv {url}
+        ',r': restart
+        ',t': config-cycle tabs.show always never
   colors.webpage.darkmode.enabled:
     global: true
   colors.webpage.darkmode.policy.images:
     global: never
+  content.javascript.clipboard:
+    https://github.com: access-paste
+  statusbar.show:
+    global: never
+  tabs.show:
+    global: never
+  window.hide_decoration:
+    global: false
