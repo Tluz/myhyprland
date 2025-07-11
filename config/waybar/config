@@ -63,7 +63,7 @@
       "tooltip-format-disconnected": "Disconnected",
       "interval": 30,
       "nospacing": 1,
-      "on-click": "foot -e iwctl"
+      "on-click": "foot -e impala"
     },
     "battery": {
       "format": "{capacity}% {icon}",
