@@ -16,13 +16,9 @@ mkdir -p ~/.config/myhyprland/current
 ln -snf ~/.config/myhyprland/themes/catppuccin ~/.config/myhyprland/current/theme
 
 # Set specific app links for current theme
-ln -snf ~/.config/myhyprland/current/theme/hyprlock.conf ~/.config/hypr/hyprlock.conf
-ln -snf ~/.config/myhyprland/current/theme/wofi.css ~/.config/wofi/style.css
 ln -snf ~/.config/myhyprland/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 mkdir -p ~/.config/btop/themes
 ln -snf ~/.config/myhyprland/current/theme/btop.theme ~/.config/btop/themes/current.theme
-mkdir -p ~/.config/mako
-ln -snf ~/.config/myhyprland/current/theme/mako.ini ~/.config/mako/config
 
 # Set new background
 ln -nsf $(find "$HOME/.config/myhyprland/current/theme/backgrounds/" -type f | head -n 1) "$HOME/.config/myhyprland/current/background"
