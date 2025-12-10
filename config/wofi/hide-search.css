@@ -1,5 +1,7 @@
 @import '.config/wofi/style.css';
 @import '.config/myhyprland/current/theme/wofi.css';
 #input{
-        margin: -200px; 
+        margin: -200px;
+        display: none;
+        opacity: 0;
 }
