@@ -1,2 +1,5 @@
-@define-color foreground #e6d8ba;
-@define-color background #11221C;
+* {
+  color: #e6d8ba;
+  background-color: #11221C;
+}
+
